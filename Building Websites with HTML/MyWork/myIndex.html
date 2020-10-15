@@ -7,70 +7,19 @@
     <meta name="description" content="Store front for Bethany's Pie Shop">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        body {
-            margin-top: 0px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #e6e4d9;
-            background-image: url("images/pattern.png") ;
-        }
+    <link rel="stylesheet" href="styles.css">
 
-        #mainheader{
-            background-color: #a593c2;
-        }
-
-        nav{
-            height: 60px;
-            width: 1000px;
-            margin: 0 auto 20px;
-        }
-
-        #leftmenu{
-            float: left;
-            width: 30%;
-            margin-bottom: 20px;
-        }
-
-        .searchbox{
-            padding: 5px;
-            margin: 10px 10px;
-            width: 200px;
-        }
-
-        #main{
-            float: right;
-            width: 70%;
-            margin-bottom: 20px;
-        }
-
-        footer{
-            clear: both;
-            width: 100%;
-        }
-
-        header,
-        section,
-        footer,
-        aside,
-        nav,
-        main,
-        article,
-        figure {
-            display: block;
-        }
-
-
-
-    </style>
 </head>
 
 <body>
     <header id="mainheader">
         <nav>
-            <!--<img src="images/pie.png" height="55" /> -->
-            <img src="images/cake.svg" height="55"/>
+            <ul>
+                <!--<img src="images/pie.png" height="55" /> -->
+                <li><img src="images/cake.svg" height="55"/></li>
+                <li><a href="myIndex.html">Home</a></li>
+                <li><a href="myPieOverview.html">All pies</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -86,6 +35,7 @@
                 <li><a href="myCheesecakes.html">Cheese cakes</a></li>
                 <li><a href="myFruitpies.html">Fruit pies</a></li>
                 <li><a href="mySeasonalpies.html">Seasonal pies</a></li>
+                <li><a href="#promos">Promoties</a></li>
             </ul>
 
             <input type="search" class="searchbox" placeholder="Search our store"/>
@@ -113,8 +63,9 @@
                 <p>
                     Bethany is famous for using only the best ingredients. This way, we can make sure that our pies are absolutely the best.
                 </p>
+                <p>Download our full <a href="Price list.zip">price list</a></p>
             </article>
-            <section>
+            <section id="promos">
                 <h3 style="font-family:Verdana;">Our weekly promotions</h3>
                 <h4>Cheese cake</h4>
                 $12.95 - serves 4<br>
@@ -124,6 +75,7 @@
         </main>
         <footer>
             <p>Our address is <address>Bethany's Pie Shop - Bakery Street 555 Brussels Belgium</address></p>
+            <p> Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
             <small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small> <!--The small tag visualize the text smaller in the browser window then the normal text-->
             <p><small><a href="https://www.snowball.be">Created by me</a></small></p>
         </footer>
